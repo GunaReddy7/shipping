@@ -76,6 +76,21 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+	<distributionManagement>
+	
+	    <repository>
+	      <id>nexus</id>
+	      <name>guna</name>
+	      <url>http://172.16.238.77:8081/repository/shiiping-release////</url>
+	    </repository>
+	    
+	    <snapshotRepository>
+	      <id>nexus</id>
+	      <name>guna</name>
+	      <url>http://http://172.16.238.77:8081/repository/shipping-snapshot////</url>
+	    </snapshotRepository>
+	    
+	</distributionManagement>
 
     <build>
         <finalName>shipping</finalName>
