@@ -48,6 +48,6 @@ jobs:
          dockerfile: docker/shipping/Dockerfile
          path: target/
          registry: docker.io
-         image: venupj/sockshop
+         image: gunareddy7/sockshop
           #tag_with_ref:true
           #tag_with_sha:true
