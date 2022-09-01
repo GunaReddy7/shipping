@@ -28,7 +28,7 @@ jobs:
           java-version: 1.8
       
       - name: Build with Maven
-        run: mvn -B -DskipTests package --file pom.xml
+        run: mvn -B  package --file pom.xml
 
       - name: Unit Tests
         run: mvn -q test
@@ -46,8 +46,7 @@ jobs:
         if: startsWith(github.ref, 'refs/tags/v') || github.ref == 'refs/heads/master'
         with:
          dockerfile: docker/shipping/Dockerfile
-         path: target/
          registry: docker.io
-         image: gunareddy7/sockshop
+         image: gunareddy7/shipping
           #tag_with_ref:true
           #tag_with_sha:true
